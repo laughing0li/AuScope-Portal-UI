@@ -186,6 +186,39 @@ export const config = {
     'bulkdensitypoint_4326',
     'waroxi_wa_4326_bed'
   ],
+  // Layers that use CSW records to display a simple rectangle on map
+  cswrenderer: [
+    'pmd-crc-project-a1-presentations',
+    'pmd-crc-project-c1-final-report',
+    'pmd-crc-project-c2-final-report',
+    'pmd-crc-project-c6-final-report',
+    'pmd-crc-project-c7-final-report',
+    'pmd-crc-project-i1-appendix1',
+    'pmd-crc-project-i1-appendix5',
+    'pmd-crc-project-i2-presentations',
+    'pmd-crc-project-i5-final-report',
+    'pmd-crc-project-i6-final-report',
+    'pmd-crc-project-i9-final-report',
+    'pmd-crc-project-t1-final-report',
+    'pmd-crc-project-t3-final-report',
+    'pmd-crc-project-t67-final-report',
+    'pmd-crc-project-t11-final-report',
+    'pmd-crc-project-y2-appendix',
+    'pmd-crc-project-y4-final-report',
+    'leme-crc-maps',
+    'portal-geo-models',
+    'l180-mt-isa-deep-crus-seis-surv-qld-2006-stac-and-migr-data-and-imag-for-line-06ga-to-06ga',
+    'are-ther-any-sand-uran-syst-in-the-erom-basi',
+    'l164-curn-seis-surv-sa-2003-2004-stac-and-migr-seis-data-and-imag-for-line-03ga',
+    'lawn-hill-plat-and-leic-rive-faul-trou-meas-stra-sect-onli-gis',
+    'pred-mine-disc-in-the-east-yilg-crat-an-exam-of-dist-targ-of-an-orog-gold-mine-syst',
+    'fina-repo-3d-geol-mode-of-the-east-yilg-crat-proj-pmd-y2-sept-2001-dece-2004',
+    'cate-3-expl-lice-poly-of-tasm-min-reso-tasm',
+    'auscope-mt-collection-1',
+    'auscope-mt-collection-2',
+    'auscope-mt-collection-3',
+    'auscope-mt-collection-4'
+  ],
   // Layers that require a JSON response for WMS GetFeature requests
   wmsGetFeatureJSON: [
     // ASTER is served by GSKY which only returns JSON
@@ -236,5 +269,20 @@ export const config = {
     'ga-geophys-6', 'ga-geophys-7', 'ga-geophys-8', 'ga-geophys-9', 'ga-geophys-10',
     'ga-geophys-11', 'ga-geophys-12', 'ga-geophys-13', 'ga-geophys-14', 'ga-geophys-15',
     'ga-geophys-16', 'ga-geophys-17', 'ga-geophys-18', 'ga-geophys-19'
-  ]
+  ],
+  proxyStyleService: {
+    'nvcl-v2-borehole': {'service': 'BoreholeStyleService', 'color': '#cc0000'},
+    'sf0-borehole-nvcl': {'service': 'BoreholeStyleService', 'color': '#0000ff'},
+    'erl-mineview': {'service': 'EarthMineStyleService', 'color': '#a51f2f'},
+    'erl-mineraloccurrenceview': {'service': 'EarthMineStyleService', 'color': '#e02e16'},
+    'erl-commodityresourceview': {'service': 'EarthMineStyleService', 'color': '#940ea3'},
+    'erml-miningactivity': {'service': 'EarthMineStyleService', 'color': '#cc0000'},
+    'erml-mine': {'service': 'EarthMineStyleService', 'color': '#cc0000'},
+    'erml-mineraloccurrence': {'service': 'EarthMineStyleService', 'color': '#8C489F'},
+    'geological-provinces': {'service': 'GeologicalProvinceStyleService', 'color': ''},
+    'mineral-occ-view': {'service': 'EarthMineStyleService', 'color': '#ed9c38'},
+    'remanent-anomalies-AutoSearch': {'service': 'RemanentAutoStyleService', 'color': '#0000FF'},
+    'remanent-anomalies': {'service': 'RemanentAutoStyleService', 'color': '#000000'},
+    'remanent-anomalies-EMAG': {'service': 'RemanentAutoStyleService', 'color': ''}
+  }
 };

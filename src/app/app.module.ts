@@ -183,7 +183,11 @@ PlotlyModule.plotlyjs = PlotlyJS;
                  {
                     provide: HTTP_INTERCEPTORS,
                     useClass: AuthErrorHandlerInterceptor,
-                    multi: true,
+                    multi: true
+                 },
+                 {
+                    provide: 'PORTAL_CONFIG',
+                    useValue: config
                  }
     ],
     imports: [

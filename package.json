@@ -2,6 +2,9 @@
   "name": "auscope-portal",
   "version": "6.6.0",
   "license": "MIT",
+  "exports": {
+    "./config": "./src/config-export.ts"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng serve",
